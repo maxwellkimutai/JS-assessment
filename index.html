@@ -13,12 +13,15 @@
             </div>
         </div>
         <script type="text/javascript">
-        var currentNode,
-            ni = document.createNodeIterator(document.documentElement, NodeFilter.SHOW_ELEMENT);
+        document.querySelectorAll('*').forEach(function(node) {
+            // Do whatever you want with the node object.
+            if (node.parentElement) {
+                console.log('Parent = ' + node.parentElement.tagName + " Child: " + node.tagName);
+            }
 
-        while(currentNode = ni.nextNode()) {
-            console.log(currentNode.nodeName);
-        }
+        });
+        var c = document.body.childNodes;
+        console.log(c);
         </script>
     </body>
 </html>
