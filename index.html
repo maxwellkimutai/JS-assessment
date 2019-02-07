@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="js/scripts.js"></script>
+        <title></title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="about">
+                <h1>JS ASSESSMENT</h1>
+                <p>This is a Moringa School JavaScript test page.</p>
+            </div>
+        </div>
+        <script type="text/javascript">
+        var currentNode,
+            ni = document.createNodeIterator(document.documentElement, NodeFilter.SHOW_ELEMENT);
+
+        while(currentNode = ni.nextNode()) {
+            console.log(currentNode.nodeName);
+        }
+        </script>
+    </body>
+</html>
