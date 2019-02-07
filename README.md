@@ -1,4 +1,4 @@
-# Yolomy
+# JS Assessment
 #### This is an interview assessment webpage based that lists all DOM elements and their childen , February 7, 2019
 #### By **Maxwell Kimutai**
 
